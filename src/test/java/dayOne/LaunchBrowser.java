@@ -120,9 +120,7 @@ public class LaunchBrowser {
         });
     }
     private static boolean isAdRequest(Request request) {
-        // Add your own logic to determine if a request is an ad-related
-        // For example, you can check the request URL or resource type
-        return request.url().contains("doubleclick.net") || request.resourceType().equals("image");
+               return request.url().contains("doubleclick.net") || request.resourceType().equals("image");
     }
     private static void fillPasswordField(Page page) {
         // Generate a random strong password
