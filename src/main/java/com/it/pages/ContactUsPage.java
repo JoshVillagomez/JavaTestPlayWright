@@ -24,7 +24,7 @@ private Page page;
             subjectInput.fill(subject);
             messageInput.fill(message);
           
-            page.press("input[data-qa='submit-button']", "Enter");
+            //page.press("input[data-qa='submit-button']", "Enter");
            
             
         } catch (Exception e) {
@@ -58,7 +58,7 @@ private Page page;
 	}
 	
 	
-	public static void clickLogoutLink(Page page) {
+public static void clickLogoutLink(Page page) {
         
         
         page.waitForSelector("//a[@href='/logout' and @style='color:brown;']//i[@class='fa fa-lock']/..")

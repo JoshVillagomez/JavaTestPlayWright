@@ -48,15 +48,16 @@ public class MainE2E {
         productsPage.clickOnViewCartLink(page);
         cartPage.clickCheckOutCart(page);
         cartPage.clickRegisterLink(page);
-        loginPage.fillSignupForm(page, "Joe Mion6r", "ma064944d@joe.com");
+        loginPage.fillSignupForm(page, "Joe Mion6r", "either1@joe.com");
         signupLoginPage.fillSignUpFields(page);
         addressPage.fillAddressPageInfo(page);
         paymentPage.fillPaymentFields(page);
         homePage.clickLogoutLink(page);
-        loginPage.fillLoginpForm(page, "ma064944d@joe.com", "MyStrongPassword123!");
+        loginPage.fillLoginpForm(page, "either1@joe.com", "MyStrongPassword123!");
         homePage.clickContactUsLink(page);
-        contactUsPage.fillOutContactUsForm(page, "Joe Mion6r", "ma064944d@joe.com", "report", "The report is given and submitted");
-        contactUsPage.clickLogoutLink(page);
+        contactUsPage.fillOutContactUsForm(page, "Joe Mion6r", "either1@joe.com", "report", "The report is given and submitted");
+        contactUsPage.clickSubmitButton(page);
+        //contactUsPage.clickLogoutLink(page);
         
         page.close();
         page.context().browser().close();
